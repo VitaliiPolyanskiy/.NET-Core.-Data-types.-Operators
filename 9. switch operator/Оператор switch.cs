@@ -38,7 +38,7 @@ namespace CSharpApplication.operator_switch
                         break;
                 }
                 Console.WriteLine("Ещё раз? д/н");
-                answer = Console.ReadLine();
+                answer = Console.ReadLine()!;
               } while (answer == "д" || answer == "Д");
             
         }
