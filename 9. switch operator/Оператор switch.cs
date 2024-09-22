@@ -9,7 +9,7 @@ namespace CSharpApplication.operator_switch
             do
             {
                 Console.WriteLine("Введите день недели на русском языке: ");
-                string str = Console.ReadLine();
+                string? str = Console.ReadLine();
                 switch (str)
                 {
                     case "Понедельник":

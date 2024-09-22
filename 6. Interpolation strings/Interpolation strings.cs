@@ -17,7 +17,7 @@ namespace Interpolation_strings
 
                 // Форматирование строки
                 var person = new { Name = "Иван", Surname = "Иванов", Age = 25 };
-                string output = String.Format("Имя: {0, 5}  Фамилия: {1, 10}  Возраст: {2, 5}",
+                string output = string.Format("Имя: {0, 5}  Фамилия: {1, 10}  Возраст: {2, 5}",
                     person.Name, person.Surname, person.Age);
                 Console.WriteLine(output);
 
