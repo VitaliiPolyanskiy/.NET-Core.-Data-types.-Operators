@@ -70,7 +70,7 @@ namespace CSharpApplication.DataTypes
                 Console.WriteLine(i);
 
                 const double number = 578.7;
-                string str = number.ToString();
+                string? str = number.ToString();
                 Console.WriteLine(str);
 
                 Console.Write("Введите строку:");
