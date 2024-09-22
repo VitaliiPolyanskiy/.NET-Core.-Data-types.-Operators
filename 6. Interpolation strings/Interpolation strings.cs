@@ -9,7 +9,7 @@ namespace Interpolation_strings
             {
                 int a = 0, b = 0;
                 Console.WriteLine("Введите целое число: ");
-                a = int.Parse(Console.ReadLine());
+                a = int.Parse(Console.ReadLine()!);
                 Console.WriteLine("Введите целое число: ");
                 b = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine($"Результат {a}/{b}={a / b}");
