@@ -7,7 +7,7 @@ namespace CSharpApplication.visibility_scope
         public static void Main()
         {
             Visibility_scope obj = new Visibility_scope();
-            obj.test();
+            obj.Test();
         }
     }
 
@@ -15,7 +15,7 @@ namespace CSharpApplication.visibility_scope
     {
         int A = 10, B = 5;
         
-        public void test()
+        public void Test()
         {
             int C;
             int A = 20;
