@@ -5,9 +5,9 @@
         public static void Main()
         {
             int a = 10, b = 5, c = 7, d = 8; // &&  ||
-            if (a < b && ++c <= d) //++c не выполнится, т.к. сокращенная схема
+            if (a < b && ++c <= d) //++c не виконається, т.к. скорочена схема
             {
-                Console.WriteLine("Строка не выведется на экран!");
+                Console.WriteLine("The line will not be displayed on the screen.");
             }
             else
             {
@@ -16,7 +16,7 @@
 
             if (a < b & ++c <= d) // &  |  ^
             {
-                Console.WriteLine("Строка не выведется на экран!");
+                Console.WriteLine("The line will not be displayed on the screen.");
             }
             else
             {
@@ -29,25 +29,25 @@
             }
             else
             {
-                Console.WriteLine("Строка не выведется на экран!");
+                Console.WriteLine("The line will not be displayed on the screen.");
             }
 
             if (a > 0)
             {
-                Console.WriteLine("Значение переменной а отлично от нуля!");
+                Console.WriteLine("The value of variable a is different from zero!");
             }
 
             /*
-             // ошибка компиляции: выражание в скобках должно иметь тип bool
+             // помилка компіляції: вираз у дужках повинен мати тип bool
              if(a) 
              {
-               Console.WriteLine("Значение переменной а отлично от нуля!");
+               Console.WriteLine("The value of variable a is different from zero!");
              }
              
-             // ошибка компиляции: к типу bool преобразования нет
+             // помилка компіляції: до типу bool перетворення немає
             if ((bool)a)
             {
-                Console.WriteLine("Значение переменной а отлично от нуля!");
+                Console.WriteLine("The value of variable a is different from zero!");
             }
             */
 

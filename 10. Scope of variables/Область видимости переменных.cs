@@ -1,12 +1,10 @@
-using System;
-
 namespace CSharpApplication.visibility_scope
 {
     class MainClass
     {
         public static void Main()
         {
-            Visibility_scope obj = new Visibility_scope();
+            Visibility_scope obj = new();
             obj.Test();
         }
     }
@@ -21,16 +19,18 @@ namespace CSharpApplication.visibility_scope
             int A = 20;
             {
                 int D;
-                //int A; // недопустимо: конфликт с локальной переменной во внешнем блоке
+                //int A; // неприпустимо: конфлікт із локальною змінною у зовнішньому блоці
                 C = B;
                 D = this.A;
-                Console.WriteLine("Переменная A = " + A + "\nПоле B = " + B + "\nПеременная C = " + C + "\nПеременная D = " + D + "\nПоле A = " + this.A);
+                Console.WriteLine("Variable A = " + A + "\nField B = " + 
+                    B + "\nVariable C = " + C + "\nVariable D = " + 
+                    D + "\nField A = " + this.A);
             }
             {
                 int D = 20;
-                Console.WriteLine("Переменная D = " + D);
-                // int E; // переменная не инициализирована
-                // E += 10; // ошибка компиляции
+                Console.WriteLine("Variable D = " + D);
+                // int E; // змінна не ініціалізована
+                // E += 10; // помилка компіляції
             }
         }
     }

@@ -6,13 +6,13 @@ namespace CSharpApplication.bitwise
         {
             try
             {
-                Console.WriteLine("Введите число: ");
+                Console.WriteLine("Enter the number: ");
                 int a = Convert.ToInt32(Console.ReadLine());
-                // Проверка на четность
+                // Перевірка на парність
                 if ((a & 1) == 1)
-                    Console.WriteLine(a + " - нечетное значение");
+                    Console.WriteLine(a + " - odd value");
                 else
-                    Console.WriteLine(a + " - четное значение");
+                    Console.WriteLine(a + " - even value");
                 int b = 2, c = 5;
                 int f = b | c;
                 Console.WriteLine(f); // 7

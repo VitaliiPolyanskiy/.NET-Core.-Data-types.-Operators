@@ -1,28 +1,32 @@
 
+using System.Text;
+
 namespace Interpolation_strings
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.InputEncoding = Encoding.UTF8;
             try
             {
                 int a = 0, b = 0;
-                Console.WriteLine("Введите целое число: ");
+                Console.WriteLine("Enter an integer: ");
                 a = int.Parse(Console.ReadLine()!);
-                Console.WriteLine("Введите целое число: ");
+                Console.WriteLine("Enter an integer: ");
                 b = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine($"Результат {a}/{b}={a / b}");
-                Console.WriteLine($"Результат {a}%{b}={a % b}");
+                Console.WriteLine($"Result {a}/{b}={a / b}");
+                Console.WriteLine($"Result {a}%{b}={a % b}");
 
-                // Форматирование строки
-                var person = new { Name = "Иван", Surname = "Иванов", Age = 25 };
-                string output = string.Format("Имя: {0, 5}  Фамилия: {1, 10}  Возраст: {2, 5}",
+                // Форматування рядка
+                var person = new { Name = "Jeffrey", Surname = "Richter", Age = 61 };
+                string output = string.Format("Name: {0, 5}  Surname: {1, 10}  Age: {2, 5}",
                     person.Name, person.Surname, person.Age);
                 Console.WriteLine(output);
 
-                // Интерполяция строк предлагает альтернативу форматированию строк
-                output = $"Имя: {person.Name,5}  Фамилия: {person.Surname,10}  Возраст: {person.Age,5}";
+                Console.WriteLine("Інтерполяція рядків пропонує альтернативу формату рядків");
+                output = $"Name: {person.Name,5}  Surname: {person.Surname,10}  Age: {person.Age,5}";
                 Console.WriteLine(output);
             }
             catch (Exception ex)

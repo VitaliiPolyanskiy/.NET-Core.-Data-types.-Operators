@@ -19,7 +19,7 @@ namespace CSharpApplication.DataTypes
                 Console.WriteLine("System.Byte.MaxValue {0}", byte.MaxValue);
 
                 int c = -32765;
-                //a = c; // неявное преобразование запрещено
+                //a = c; // неявне перетворення не дозволяється
                 a = (sbyte)c;
                 Console.WriteLine(c);
                 Console.WriteLine(a);
@@ -52,19 +52,19 @@ namespace CSharpApplication.DataTypes
                 Console.WriteLine("System.Double.MinValue {0}", System.Double.MinValue);
                 Console.WriteLine("System.Double.MaxValue {0}", double.MaxValue);
 
-                //float g = 75.535; // неявное преобразование запрещено
+                //float g = 75.535; // неявне перетворення не дозволяється
                 float g = 75.535f;
                 Console.WriteLine(g);
                 Console.WriteLine("System.Single.MinValue {0}", System.Single.MinValue);
                 Console.WriteLine("System.Single.MaxValue {0}", float.MaxValue);
 
-                decimal h = 12345.6789M; //Десятичное число с фиксированной точностью 
+                decimal h = 12345.6789M; // Десяткове число з фіксованою точністю 
                 Console.WriteLine(h);
                 Console.WriteLine("System.Decimal.MinValue {0}", System.Decimal.MinValue);
                 Console.WriteLine("System.Decimal.MaxValue {0}", decimal.MaxValue);
 
                 bool i = true;
-                //bool i = 1; // неявное преобразование запрещено
+                //bool i = 1; // неявне перетворення не дозволяється
                 Console.WriteLine(i);
                 i = false;
                 Console.WriteLine(i);
@@ -73,12 +73,12 @@ namespace CSharpApplication.DataTypes
                 string? str = number.ToString();
                 Console.WriteLine(str);
 
-                Console.Write("Введите строку:");
+                Console.Write("Enter a fractional number:");
                 str = Console.ReadLine();
                 double real = double.Parse(str);
                 Console.WriteLine(real + 10);
 
-                Console.Write("Введите строку:");
+                Console.Write("Enter a fractional number:");
                 str = Console.ReadLine();
                 real = Convert.ToDouble(str);
                 Console.WriteLine(real + 10);

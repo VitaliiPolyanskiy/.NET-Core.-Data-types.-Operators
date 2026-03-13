@@ -6,14 +6,14 @@ namespace CSharpApplication.escape
     {
         static void Main()
         {
-            Console.WriteLine("Привет C#!");
-            Console.WriteLine("Привет \tC#!");
-            Console.WriteLine("Привет \nC#!");
-            Console.WriteLine("Привет \bC#!");
-            Console.WriteLine("Привет \rC#!");
-            Console.WriteLine("\"Привет C#!\"");
-            Console.WriteLine("\\Привет C#!\\");
-            Console.WriteLine(@"\Привет 
+            Console.WriteLine("Programming language C#!");
+            Console.WriteLine("Programming language \tC#!");
+            Console.WriteLine("Programming language \nC#!");
+            Console.WriteLine("Programming language \bC#!");
+            Console.WriteLine("Programming language \rC#!");
+            Console.WriteLine("\"Programming language C#!\"");
+            Console.WriteLine("\\Programming language C#!\\");
+            Console.WriteLine(@"\Programming language 
             C#!\");   
         }
     }

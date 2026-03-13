@@ -1,14 +1,14 @@
 ﻿
 class Hello
 {
-    // Точка входа в программу
+    // Точка входу до програми
     static void Main() 
     {
-        // Логические литералы
+        // Логічні літерали
         System.Console.WriteLine(true); 
         System.Console.WriteLine(false);
 
-        // Целочисленные литералы
+        // Цілочисленні літерали
         System.Console.WriteLine(-7);
         System.Console.WriteLine(7);
         System.Console.WriteLine(0b111);  
@@ -16,16 +16,16 @@ class Hello
         System.Console.WriteLine(0x1A);   
         System.Console.WriteLine(0xFF);
 
-        // Вещественные литералы
+        // Речовинні літерали
         System.Console.WriteLine(0.92e4);   
         System.Console.WriteLine(7.2E-1);
 
-        // Символьные литералы
+        // Символьні літерали
         System.Console.Write('C');
         System.Console.WriteLine('#');
 
-        // Строковые литералы
-        System.Console.WriteLine("Привет, мир\n");
+        // Рядкові літерали
+        System.Console.WriteLine("The .NET platform and the C# programming language\n");
         System.Console.WriteLine("Hello, world\n");
     }
 }

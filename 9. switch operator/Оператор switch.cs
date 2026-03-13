@@ -1,45 +1,49 @@
 
+using System.Text;
+
 namespace CSharpApplication.operator_switch
 {
     class MainClass
     {
         public static void Main()
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.InputEncoding = Encoding.UTF8;
             string answer;
             do
             {
-                Console.WriteLine("Введите день недели на русском языке: ");
+                Console.WriteLine("Введіть день тижня українською: ");
                 string? str = Console.ReadLine();
                 switch (str)
                 {
-                    case "Понедельник":
+                    case "Понеділок":
                         Console.WriteLine("Monday");
                         break;
-                    case "Вторник":
+                    case "Вівторок":
                         Console.WriteLine("Tuesday");
                         break;
-                    case "Среда":
+                    case "Середа":
                         Console.WriteLine("Wednesday");
                         break;
-                    case "Четверг":
+                    case "Четвер":
                         Console.WriteLine("Thursday");
                         break;
-                    case "Пятница":
+                    case "П'ятниця":
                         Console.WriteLine("Friday");
                         break;
-                    case "Суббота":
+                    case "Субота":
                         Console.WriteLine("Saturday");
                         break;
-                    case "Воскресенье":
+                    case "Неділя":
                         Console.WriteLine("Sunday");
                         break;
                     default:
-                        Console.WriteLine("Такого дня недели нет!");
+                        Console.WriteLine("Такого дня нема.");
                         break;
                 }
-                Console.WriteLine("Ещё раз? д/н");
+                Console.WriteLine("Ще раз? Так/ні");
                 answer = Console.ReadLine()!;
-              } while (answer == "д" || answer == "Д");
+              } while (answer == "так" || answer == "ТАК");
             
         }
 
